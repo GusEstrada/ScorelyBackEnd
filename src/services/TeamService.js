@@ -121,11 +121,19 @@ class TeamService {
 
   async getTeamPlayersByPosition(equipoId, posicion) {
     try {
+<<<<<<< HEAD
+=======
+      // Verificar que el equipo existe
+>>>>>>> d05e2d4291c955af323de6deb44d2d0f1a860af8
       const team = await TeamModel.getById(equipoId);
       if (!team) {
         throw new Error('Equipo no encontrado');
       }
 
+<<<<<<< HEAD
+=======
+      // Validar posición
+>>>>>>> d05e2d4291c955af323de6deb44d2d0f1a860af8
       const posicionesValidas = ['Portero', 'Defensa', 'Mediocampista', 'Delantero'];
       if (!posicionesValidas.includes(posicion)) {
         throw new Error('Posición no válida');
