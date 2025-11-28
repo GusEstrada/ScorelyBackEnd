@@ -6,10 +6,7 @@ const authRoutes = require('./routes/AuthRoutes');
 const playerRoutes = require('./routes/PlayerRoutes');
 const teamRoutes = require('./routes/TeamRoutes');
 const leagueRoutes = require('./routes/LeagueRoutes');
-<<<<<<< HEAD
 const statsRoutes = require('./routes/StatsRoutes');
-=======
->>>>>>> d05e2d4291c955af323de6deb44d2d0f1a860af8
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -22,10 +19,7 @@ app.use('/auth', authRoutes);
 app.use('/api/jugadores', playerRoutes);
 app.use('/api/equipos', teamRoutes);
 app.use('/api/ligas', leagueRoutes);
-<<<<<<< HEAD
 app.use('/api/estadisticas', statsRoutes);
-=======
->>>>>>> d05e2d4291c955af323de6deb44d2d0f1a860af8
 
 app.get('/', (req, res) => {
   res.json({ mensaje: '¡Bienvenido a la API de Scorely! v1.0' });
